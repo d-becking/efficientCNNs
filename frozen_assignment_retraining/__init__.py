@@ -1,0 +1,1 @@
+from .main_frozen_assignment import main
