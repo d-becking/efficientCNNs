@@ -3,12 +3,12 @@
 The aim of this project was to design a general framework which generates efficient convolutional neural networks (CNNs) 
 that solve given image classification tasks to a specified quality level. We propose a two-step 
 paradigm: 1) utilizing model compound scaling to extend a baseline 
-model until the specified accuracy is reached; 2) applying Entropy-Constrained Trained Ternarization (EC2T) to compress 
+model until the specified accuracy is reached; 2) applying **Entropy-Constrained Trained Ternarization (EC2T)** to compress 
 the upscaled model by simultaneously quantizing the network parameters to 2 bit (ternarization) and introducing a high 
 level of sparsity due to an entropy constraint. 
 
 Following this approach, we rendered efficient models that solve the  CIFAR-100 and  ImageNet classification tasks to 
-specified classification accuracies of $80\%$ and $75\%$. We submitted these results to the MicroNet challenge held at 
+specified classification accuracies of 80\% and 75\%. We submitted these results to the MicroNet challenge held at 
 NeurIPS conference in December 2019, and ranked among the top 5 and top 10 entries, respectively. In order to score our  
 networks for the challenge, we developed an extensive scoring script which calculates the effective number of parameters 
 and mathematical operations. The script was verified by the challenge's hosts.
@@ -26,10 +26,19 @@ The method is explained in detail in my [masterthesis](https://github.com/d-beck
 ### MicroNet Challenge Scores:
 **Our improved scores:**
 
-|    *Task*   |*# Params*|*Top-1 Acc.*|*Sparsity*|*# Scoring params*|*# Inference FLOP*|*Overall Score*|
+|    *Task*   |*# Params*|*Top-1 Acc.*|*Sparsity*|*# Scoring params*|*# Inference FLOPs*|*Overall Score*|
 |:-----------:|:--------:|:----------:|:--------:|:----------------:|:-----------------:|:-------------:|
-| `CIFAR-100` |   8.0M   |    80.13%  |   90.49% |      0.23M       |       71M      |    0.0182     |
-| `ImageNet`  |   7.8M   |    75.05%  |   60.73% |      0.97M       |       256M     |    0.4070     |
+| `CIFAR-100` |   8.0M   |    80.13%  |   90.49% |      0.23M       |       71M      |    0.0130     |
+| `ImageNet`  |   7.8M   |    75.05%  |   60.73% |      0.97M       |       256M     |    0.3639     |
+| `CIFAR-10` |   8.0M   |    96.71%  |   89.99% |      0.23M       |       80M      |    -     |
+
+**Quantized ResNets:**
+
+|    *Model*   |*# Params*|*Top-1 Acc.*|*Sparsity*|*# Scoring params*|*# Inference FLOPs*|
+|:-----------:|:--------:|:----------:|:--------:|:----------------:|:-----------------:|
+| `ResNet-18` |   11.0M   |    67.58%  |   59.00% |      0.73M       |       622M      |   
+| `ResNet-20` |   269K   |    91.01%  |   63.90% |      12K       |       8M      |   
+
 
 The improved models can be found at `./model_scoring/trained_t_models`
 
@@ -42,7 +51,7 @@ The improved models can be found at `./model_scoring/trained_t_models`
 
 
 ### Learning Sparse \& Ternary Neural Networks with EC2T
-![approach](approach.pdf)
+![approach](approach.png)
 
 ### Code execution:
 
