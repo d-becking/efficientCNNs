@@ -23,6 +23,15 @@ more efficient networks, as the algorithm explicitly boosts sparsity.
 
 The method is explained in detail in my [masterthesis](https://github.com/d-becking/efficientCNNs/blob/master/masterthesis.pdf).
 
+**Learning Sparse \& Ternary Neural Networks with EC2T:**
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.jpg?raw=true)
+
+**Ternary Assignment:**
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/assignment.jpg?raw=true)
+
+**The EC2T Algorithm:**
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/ec2t.jpg?raw=true)
+
 ### MicroNet Challenge Scores:
 **Our improved scores:**
 
@@ -50,10 +59,8 @@ The improved models can be found at `./model_scoring/trained_t_models`
 | `ResNet-18` |   11.0M   |    67.58%  |   59.00% |      0.73M       |       622M      |   
 | `ResNet-20` |   269K   |    91.01%  |   63.90% |      12K       |       8M      |   
 
-
-
-### Learning Sparse \& Ternary Neural Networks with EC2T
-![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.jpg?raw=true)
+### Outperforming Trained Ternary Quantization (TTQ):
+ttq_vs_ec2t_top1_enlarge
 
 ### Code execution:
 
@@ -134,3 +141,11 @@ python -u run_scoring.py --dataset ImageNet --data-path [your_path] --val-batch-
 We used the PyTorch framework for our experiments (version 1.4.0) and CUDA version 10.1 plus cuDNN Version 7603.
 As training hardware we used NVIDIA Tesla V100-PCIE-32GB GPUs with driver version 440.33.01  
 and NVIDIA TITAN V GPUs with driver version 430.40.
+
+### Further Improvements:
+**Compressed Storage Format for Sparse Ternary Layers:**
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tern_storage.jpg?raw=true)
+
+**Tree Adder for Efficient Accumulation:**
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tree_adder.jpg?raw=true)
+
