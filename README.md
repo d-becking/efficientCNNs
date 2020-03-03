@@ -144,8 +144,8 @@ and NVIDIA TITAN V GPUs with driver version 430.40.
 
 ### Further Improvements:
 **Compressed Storage Format for Sparse Ternary Layers:**
-![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tern_storage.jpg?raw=true)
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tern_storage.jpg?raw=true | width=100)
 
 **Tree Adder for Efficient Accumulation:**
-![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tree_adder.jpg?raw=true)
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/tree_adder.jpg?raw=true | width=10)
 
