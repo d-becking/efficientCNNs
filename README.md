@@ -53,7 +53,7 @@ The improved models can be found at `./model_scoring/trained_t_models`
 
 
 ### Learning Sparse \& Ternary Neural Networks with EC2T
-![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.pdf?raw=true)
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.jpg?raw=true)
 
 ### Code execution:
 
