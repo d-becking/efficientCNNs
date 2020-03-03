@@ -32,13 +32,6 @@ The method is explained in detail in my [masterthesis](https://github.com/d-beck
 | `ImageNet`  |   7.8M   |    75.05%  |   60.73% |      0.97M       |       256M     |    0.3639     |
 | `CIFAR-10` |   8.0M   |    96.71%  |   89.99% |      0.23M       |       80M      |    -     |
 
-**Quantized ResNets:**
-
-|    *Model*   |*# Params*|*Top-1 Acc.*|*Sparsity*|*# Scoring params*|*# Inference FLOPs*|
-|:-----------:|:--------:|:----------:|:--------:|:----------------:|:-----------------:|
-| `ResNet-18` |   11.0M   |    67.58%  |   59.00% |      0.73M       |       622M      |   
-| `ResNet-20` |   269K   |    91.01%  |   63.90% |      12K       |       8M      |   
-
 
 The improved models can be found at `./model_scoring/trained_t_models`
 
@@ -50,8 +43,17 @@ The improved models can be found at `./model_scoring/trained_t_models`
 | `ImageNet`  |   7.8M   |    75.03%  |   46.33% |      1.33M       |       455.19M     |    0.5821     |
 
 
+### Quantized ResNets:
+
+|    *Model*   |*# Params*|*Top-1 Acc.*|*Sparsity*|*# Scoring params*|*# Inference FLOPs*|
+|:-----------:|:--------:|:----------:|:--------:|:----------------:|:-----------------:|
+| `ResNet-18` |   11.0M   |    67.58%  |   59.00% |      0.73M       |       622M      |   
+| `ResNet-20` |   269K   |    91.01%  |   63.90% |      12K       |       8M      |   
+
+
+
 ### Learning Sparse \& Ternary Neural Networks with EC2T
-![approach](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.pdf?raw=true)
+![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.pdf?raw=true)
 
 ### Code execution:
 
