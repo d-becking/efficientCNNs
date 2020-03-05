@@ -471,7 +471,7 @@ def optimization_step(model, loss, data, labels, optimizer, opt_fp, opt_sf,
             # Requantize ternary weights layerwise using updated weights and centroids
             lambda_decay = ternary_weights[j].numel() / largest_layer
             # To ensure that the decay is not too intense we introduce a sustain
-            lambda_sustain = 0.1
+            lambda_sustain = 0.05
             lambda_decay = (lambda_decay + lambda_sustain) / (1 + lambda_sustain)
             ternary_weights[j].data, lambda_return, assignment = quantize(fp_weights[j].data, w_p, w_n,
                                                                           lambda_max_divider, lambda_list[j],

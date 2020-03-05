@@ -34,7 +34,7 @@ import numpy as np
 import os
 import PIL
 from collections import OrderedDict
-from model import micronet, image_micronet, EfficientNet, best_cifar_micronet, lenet5, resnet18, resnet20
+from model import micronet, image_micronet, EfficientNet, best_cifar_micronet, lenet5, resnet18, resnet20, resnet50
 
 parser = argparse.ArgumentParser(description='Calculating scores according to MicroNet Challenge')
 parser.add_argument('--cuda', default=True, action='store_true',
@@ -759,6 +759,9 @@ def main():
     elif args.model == 'resnet20':
         model = resnet20().to(device)
 
+    elif args.model == 'resnet50':
+        model = resnet50().to(device)
+
     else:
         raise NotImplementedError('Undefined model name %s' % args.model)
 
@@ -1020,7 +1023,7 @@ def main():
         params_tconv, scoring_params_tconv, bytes_tconv, mults_tconv, adds_tconv = count_convs(
             layer_type='in_resnet_conv',
             modules=t_conv_weights,
-            in_size=112,
+            in_size=56,
             bias=True,
             activation='relu',
             ternary=True,
