@@ -21,7 +21,7 @@ In another experiment we compressed the well-known ResNet-18 and ResNet-20 netwo
 due to EC2T with other ternary quantization methods. We concluded that EC2T outperforms related works while producing 
 more efficient networks, as the algorithm explicitly boosts sparsity.
 
-The method is explained in detail in my [masterthesis](https://github.com/d-becking/efficientCNNs/blob/master/masterthesis.pdf).
+The method is explained in detail in my [masterthesis (draft)](https://github.com/d-becking/efficientCNNs/blob/master/masterthesis.pdf).
 
 
 ![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.jpg?raw=true)
