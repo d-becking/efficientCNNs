@@ -26,14 +26,12 @@ The method is explained in detail in my [masterthesis (draft)](https://github.co
 ### You may also want to read the arXiv.org preprint: https://arxiv.org/abs/2004.01077 
 If you find this code useful in your research, please cite:
 ```
-@article{marban_learning_2020,
-	title = {Learning {Sparse} \& {Ternary} {Neural} {Networks} with {Entropy}-{Constrained} {Trained} {Ternarization} ({EC2T})},
-	url = {http://arxiv.org/abs/2004.01077},
-	journal = {arXiv:2004.01077 [cs, math, stat]},
-	author = {Marban, Arturo and Becking, Daniel and Wiedemann, Simon and Samek, Wojciech},
-	month = apr,
-	year = {2020},
-	note = {arXiv: 2004.01077},
+@InProceedings{Marban_2020_CVPR_Workshops,
+author = {Marban, Arturo and Becking, Daniel and Wiedemann, Simon and Samek, Wojciech},
+title = {Learning Sparse & Ternary Neural Networks With Entropy-Constrained Trained Ternarization (EC2T)},
+booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+month = {June},
+year = {2020}
 }
 ```
 
