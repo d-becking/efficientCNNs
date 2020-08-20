@@ -26,13 +26,14 @@ The method is explained in detail in my [masterthesis (draft)](https://github.co
 ### You may also want to read the arXiv.org preprint: https://arxiv.org/abs/2004.01077 
 If you find this code useful in your research, please cite:
 ```
-@InProceedings{Marban_2020_CVPR_Workshops,
-author = {Marban, Arturo and Becking, Daniel and Wiedemann, Simon and Samek, Wojciech},
-title = {Learning Sparse & Ternary Neural Networks With Entropy-Constrained Trained Ternarization (EC2T)},
-booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-month = {June},
-year = {2020}
-}
+@INPROCEEDINGS{9150571,
+  author={A. {Marban} and D. {Becking} and S. {Wiedemann} and W. {Samek}},
+  booktitle={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 
+  title={Learning Sparse   Ternary Neural Networks with Entropy-Constrained Trained Ternarization (EC2T)}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={3105-3113},}
 ```
 
 ![](https://github.com/d-becking/efficientCNNs/blob/master/imgs/approach.jpg?raw=true)
